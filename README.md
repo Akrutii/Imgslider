@@ -1,2 +1,2 @@
-# Imgslider
-Image Slider
+# Image Slider
+
