@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: rgb(245, 185, 206);
+}
+
+.slider{
+    position: relative; /*for the right-left scroll icon in the image slider*/
+    width: 1000px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.image{
+    display: flex;
+    /*transform: translateX(-1500px); we will se all the images in the line*/
+    transition: transform 0.4s ease-in-out;
+}
+
+.btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 50px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.btn.prev{
+    left: 10px;
+}
+
+.btn.next{
+    right: 10px;
+}
+
+.btn:hover{
+    background-color: rgba(252, 252, 252, 0.411);
+    opacity: 0.8;
+}
+
